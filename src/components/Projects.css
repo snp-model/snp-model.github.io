@@ -1,0 +1,160 @@
+.projects {
+  padding-top: calc(var(--header-height) + var(--space-2xl));
+}
+
+.projects__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.projects__title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: var(--space-sm);
+}
+
+.projects__subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+}
+
+/* グリッドレイアウト（Bento風） */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+}
+
+/* プロジェクトカード */
+.project-card {
+  background: var(--color-background);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Featured カードは大きく */
+.project-card--featured {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .project-card--featured {
+    grid-column: span 1;
+  }
+}
+
+/* デバイスモックアップ */
+.project-card__mockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  background: var(--color-background-alt);
+}
+
+.project-card__mockup--mobile {
+  padding: var(--space-2xl) var(--space-xl);
+}
+
+.project-card__device {
+  position: relative;
+}
+
+.project-card__screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+  border-radius: var(--radius-md);
+  color: white;
+  opacity: 0.8;
+}
+
+.project-card__mockup--mobile .project-card__screen {
+  width: 120px;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius-lg);
+}
+
+/* 情報エリア */
+.project-card__info {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex: 1;
+}
+
+.project-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.project-card__description {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 技術スタック */
+.project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.tech-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-background-alt);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* リンク */
+.project-card__links {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: auto;
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+}
+
+.project-card__link:hover {
+  color: var(--color-text-primary);
+  background: var(--color-background-alt);
+}
+
+.project-card__link--primary {
+  background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+  color: white;
+}
+
+.project-card__link--primary:hover {
+  color: white;
+  opacity: 0.9;
+}

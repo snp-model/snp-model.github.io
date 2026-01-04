@@ -1,0 +1,134 @@
+.contact {
+  max-width: 800px;
+  margin: 120px auto 60px;
+  padding: 0 20px;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #ff6f00, #ff8f00) !important;
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 111, 0, 0.3);
+}
+
+.contact-button span,
+.contact-button svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 111, 0, 0.4);
+  background: linear-gradient(135deg, #ff8f00, #ffa000) !important;
+}
+
+.contact-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.contact-info {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 111, 0, 0.2);
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.info-content {
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.operator-name {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 111, 0, 0.05);
+  border-left: 3px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.operator-name strong {
+  color: var(--primary-color);
+}
+
+.info-content p {
+  margin-bottom: 1rem;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 111, 0, 0.1);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 111, 0, 0.3);
+}
+
+.github-link:hover {
+  background: rgba(255, 111, 0, 0.15);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 100px;
+  }
+
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact-button {
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+}

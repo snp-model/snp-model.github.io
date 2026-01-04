@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Navbar.css';
 
@@ -23,9 +24,9 @@ export function Navbar() {
     >
       <nav className="navbar__container container">
         {/* ロゴのみ */}
-        <a href="#" className="navbar__logo">
+        <Link to="/" className="navbar__logo">
           <span className="gradient-text">Portfolio</span>
-        </a>
+        </Link>
       </nav>
     </motion.header>
   );

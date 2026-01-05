@@ -77,6 +77,11 @@ body {
 }
 
 /* === ダークモード強制の完全無効化 === */
+/* すべての要素に適用 - Samsung Internet 対応 */
+* {
+  color-scheme: light only !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: light only !important;
@@ -86,6 +91,14 @@ body {
   body {
     background-color: #ffffff !important;
     color: #1e293b !important;
+    /* Samsung Internet の反転フィルターを無効化 */
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+  
+  /* すべての要素に強制適用 */
+  * {
+    color-scheme: light only !important;
   }
 }
 

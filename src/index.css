@@ -1,5 +1,6 @@
 /* === デザインシステム: Light Theme === */
 :root {
+  color-scheme: light;
   /* --- カラーパレット (Ethereal Light) --- */
   --color-background: #ffffff;
   --color-background-alt: #f8fafc;

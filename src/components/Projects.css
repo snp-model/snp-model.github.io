@@ -60,6 +60,11 @@
   background: var(--color-background-alt);
 }
 
+.project-card__mockup--has-image {
+  padding: 0;
+  background: var(--color-background);
+}
+
 .project-card__mockup--mobile {
   padding: var(--space-2xl) var(--space-xl);
 }
@@ -74,10 +79,31 @@
   justify-content: center;
   width: 100%;
   aspect-ratio: 16 / 10;
-  background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-1),
+    var(--color-accent-2)
+  );
   border-radius: var(--radius-md);
   color: white;
   opacity: 0.8;
+  overflow: hidden;
+}
+
+.project-card__screen--has-image {
+  opacity: 1;
+  background: none;
+  aspect-ratio: auto;
+  border-radius: 0;
+}
+
+.project-card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .project-card__mockup--mobile .project-card__screen {
@@ -150,7 +176,11 @@
 }
 
 .project-card__link--primary {
-  background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-1),
+    var(--color-accent-2)
+  );
   color: white;
 }
 

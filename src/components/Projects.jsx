@@ -1,25 +1,52 @@
-import { motion } from 'framer-motion';
-import { ExternalLink, Smartphone, Monitor } from 'lucide-react';
-import { projects } from '../data/projects';
-import './Projects.css';
+import { motion } from "framer-motion";
+import { ExternalLink, Smartphone, Monitor } from "lucide-react";
+import { projects } from "../data/projects";
+import "./Projects.css";
 
 // プロジェクトカード
 function ProjectCard({ project, index }) {
-  const isMobile = project.type === 'mobile';
+  const isMobile = project.type === "mobile";
 
   return (
     <motion.article
-      className={`project-card ${project.featured ? 'project-card--featured' : ''}`}
+      className={`project-card ${
+        project.featured ? "project-card--featured" : ""
+      }`}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
+      viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      {/* デバイスモックアップ */}
-      <div className={`project-card__mockup ${isMobile ? 'project-card__mockup--mobile' : 'project-card__mockup--web'}`}>
+      <div
+        className={`project-card__mockup ${
+          isMobile
+            ? "project-card__mockup--mobile"
+            : "project-card__mockup--web"
+        } ${
+          project.image && !project.image.includes("placeholder")
+            ? "project-card__mockup--has-image"
+            : ""
+        }`}
+      >
         <div className="project-card__device">
-          <div className="project-card__screen">
-            {isMobile ? <Smartphone size={48} /> : <Monitor size={48} />}
+          <div
+            className={`project-card__screen ${
+              project.image && !project.image.includes("placeholder")
+                ? "project-card__screen--has-image"
+                : ""
+            }`}
+          >
+            {project.image && !project.image.includes("placeholder") ? (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-card__image"
+              />
+            ) : isMobile ? (
+              <Smartphone size={48} />
+            ) : (
+              <Monitor size={48} />
+            )}
           </div>
         </div>
       </div>

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://snp-model.github.io/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <loc>https://snp-model-github-io.pages.dev/</loc>
+    <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://snp-model.github.io/privacy</loc>
-    <lastmod>2026-01-10</lastmod>
+    <loc>https://snp-model-github-io.pages.dev/privacy</loc>
+    <lastmod>2026-01-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://snp-model.github.io/contact</loc>
-    <lastmod>2026-01-10</lastmod>
+    <loc>https://snp-model-github-io.pages.dev/contact</loc>
+    <lastmod>2026-01-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://snp-model.github.io/urbanity-map/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <loc>https://urbanity-map.pages.dev/</loc>
+    <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://snp-model.github.io/mountain-area-forecast/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <loc>https://mountain-area-forecast.pages.dev/</loc>
+    <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://snp-model.github.io/sf-subgenres/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <loc>https://sf-subgenres.pages.dev/</loc>
+    <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

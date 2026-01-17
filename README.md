@@ -1,8 +1,8 @@
-# snp-model.github.io
+# snp-portfolio
 
 個人開発した Web サービスやモバイルアプリを紹介するポートフォリオサイトです。
 
-🌐 **Live Site**: [https://snp-model.github.io/](https://snp-model.github.io/)
+🌐 **Live Site**: [https://snp-model-github-io.pages.dev/](https://snp-model-github-io.pages.dev/)
 
 ## Tech Stack
 
@@ -11,7 +11,7 @@
 - **Animation**: Framer Motion
 - **Icons**: Lucide React
 - **Styling**: Vanilla CSS (CSS Variables, Flexbox/Grid)
-- **Deployment**: GitHub Actions (自動デプロイ)
+- **Deployment**: Cloudflare Pages
 
 ## 開発
 
@@ -34,22 +34,8 @@ npm run lint
 
 ## デプロイ
 
-### 自動デプロイ（推奨）
-
-`main` ブランチに push すると、GitHub Actions が自動的にビルド & デプロイを実行します。
-
-**初回のみ設定が必要:**
-
-1. GitHub リポジトリの **Settings → Pages**
-2. **Build and deployment → Source** を **"GitHub Actions"** に変更
-
-### 手動デプロイ
-
-```bash
-npm run deploy
-```
-
-※ このコマンドは `gh-pages` パッケージを使用します（非推奨：GitHub Actions を使用してください）。
+Cloudflare Pages を使用して自動デプロイされています。
+`main` ブランチに push すると自動的にビルド & デプロイが実行されます。
 
 ## プロジェクトの追加
 

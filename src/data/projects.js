@@ -9,7 +9,7 @@ export const projects = [
     type: "web", // 'mobile' または 'web'
     image: "/assets/project-urbanity-map.png",
     links: {
-      live: "https://snp-model.github.io/urbanity-map/",
+      live: "https://urbanity-map.pages.dev/",
       appStore: null,
     },
     featured: true,
@@ -22,7 +22,7 @@ export const projects = [
     type: "web", // 'mobile' または 'web'
     image: "/assets/project-mountain-area-forecast.png",
     links: {
-      live: "https://snp-model.github.io/mountain-area-forecast/",
+      live: "https://mountain-area-forecast.pages.dev/",
       appStore: null,
     },
     featured: true,
@@ -35,7 +35,7 @@ export const projects = [
     type: "web", // 'mobile' または 'web'
     image: "/assets/project-sf-subgenres.png",
     links: {
-      live: "https://snp-model.github.io/sf-subgenres/",
+      live: "https://sf-subgenres.pages.dev/",
       appStore: null,
     },
     featured: true,

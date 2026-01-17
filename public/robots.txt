@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # サイトマップの場所を通知
-Sitemap: https://snp-model.github.io/sitemap.xml
+Sitemap: https://snp-model-github-io.pages.dev/sitemap.xml

@@ -9,7 +9,7 @@ export const projects = [
     type: "web", // 'mobile' または 'web'
     image: "/assets/project-urbanity-map.png",
     links: {
-      live: "https://urbanity-map.pages.dev/",
+      live: "https://urbanity-map.serendiproducts.dev/",
       appStore: null,
     },
     featured: true,
@@ -22,7 +22,7 @@ export const projects = [
     type: "web", // 'mobile' または 'web'
     image: "/assets/project-mountain-area-forecast.png",
     links: {
-      live: "https://mountain-area-forecast.pages.dev/",
+      live: "https://mountain-area-forecast.serendiproducts.dev/",
       appStore: null,
     },
     featured: true,
@@ -35,7 +35,7 @@ export const projects = [
     type: "web", // 'mobile' または 'web'
     image: "/assets/project-sf-subgenres.png",
     links: {
-      live: "https://sf-subgenres.pages.dev/",
+      live: "https://sf-subgenres.serendiproducts.dev/",
       appStore: null,
     },
     featured: true,

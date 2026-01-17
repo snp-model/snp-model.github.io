@@ -2,7 +2,7 @@
 
 個人開発した Web サービスやモバイルアプリを紹介するポートフォリオサイトです。
 
-🌐 **Live Site**: [https://snp-model-github-io.pages.dev/](https://snp-model-github-io.pages.dev/)
+🌐 **Live Site**: [https://serendiproducts.dev/](https://serendiproducts.dev/)
 
 ## Tech Stack
 

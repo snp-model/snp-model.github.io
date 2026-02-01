@@ -40,4 +40,17 @@ export const projects = [
     },
     featured: true,
   },
+  {
+    id: "project-learn-synth",
+    title: "初めてさわるシンセサイザー",
+    description:
+      "音色レシピをもとに実際に触ってみることでシンセサイザーの仕組みを基礎から学べるサイトです。Webブラウザですぐに音作りを体験できます。",
+    type: "web", // 'mobile' または 'web'
+    image: "/assets/project-learn-synth.png",
+    links: {
+      live: "https://learn-synth.serendiproducts.dev/",
+      appStore: null,
+    },
+    featured: true,
+  },
 ];

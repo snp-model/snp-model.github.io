@@ -53,4 +53,17 @@ export const projects = [
     },
     featured: true,
   },
+  {
+    id: "project-euclidean-drum-machine",
+    title: "Euclidean Drum Machine",
+    description:
+      "数学的なアルゴリズムでリズムを生成する「ユークリディアンリズム（ユークリッドリズム）」ドラムマシン。TresilloやSambaなど、世界中の伝統的なリズムを幾何学的に視覚化し、演奏できます。",
+    type: "web", // 'mobile' または 'web'
+    image: "/assets/project-euclidean-drum-machine.png",
+    links: {
+      live: "https://euclidean-drum-machine.serendiproducts.dev/",
+      appStore: null,
+    },
+    featured: true,
+  },
 ];

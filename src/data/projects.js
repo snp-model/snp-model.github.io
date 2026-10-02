@@ -2,6 +2,19 @@
 // 実際のプロジェクトに置き換えてください
 export const projects = [
   {
+    id: "project-unmarried-rate-map",
+    title: "全国未婚率マップ",
+    description:
+      "全国の市区町村別に未婚率を地図上で確認できます。男女別・年齢別の切り替えや市区町村検索に対応し、地域ごとの傾向を比較できます。",
+    type: "web",
+    image: "/assets/project-unmarried-rate-map.png",
+    links: {
+      live: "https://unmarried-rate-map.serendiproducts.dev/",
+      appStore: null,
+    },
+    featured: true,
+  },
+  {
     id: "project-urbanity-map",
     title: "全国都会度マップ | 住みたい街診断",
     description:
